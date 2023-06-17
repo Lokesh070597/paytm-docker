@@ -4,24 +4,24 @@ services:
     images: train:v1
     ports:
       - "8000:80"
-    volume:
+    volumes:
       - "trainvol"
   movie:
     images: movie:v1
     ports:
       - "8001:80"
-    volume:
+    volumes:
       - "movievol"
   lone:
     images: lone:v1
     ports:
       - "8002:80"
-    volume:
+    volumes:
       - "lonevol"
   dth:
     images: dth:v1
     ports:
       - "8003:80"
-    volume:
+    volumes:
       - "dthvol"
 
