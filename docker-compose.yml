@@ -1,0 +1,27 @@
+version: "3"
+services:
+  train:
+    images: train:v1
+    ports:
+      - "8000:80"
+    volume:
+      - "trainvol"
+  movie:
+    images: movie:v1
+    ports:
+      - "8001:80"
+    volume:
+      - "movievol"
+  lone:
+    images: lone:v1
+    ports:
+      - "8002:80"
+    volume:
+      - "lonevol"
+  dth:
+    images: dth:v1
+    ports:
+      - "8003:80"
+    volume:
+      - "dthvol"
+
